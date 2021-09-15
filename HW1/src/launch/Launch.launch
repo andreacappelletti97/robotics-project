@@ -1,0 +1,9 @@
+<launch>
+<param name="gear_rateo" value="0.027" />
+<param name="wheel_radius" value="0.1575" />
+<param name="apparent_baseline" value="1.0625" />
+<param name="x" value="0" />
+<param name="y" value="0" />
+<param name="th" value="0" />
+<node pkg="chicago" name="Odometry" type="Odometry" output="screen" />
+</launch>

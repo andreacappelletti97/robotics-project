@@ -1,0 +1,13 @@
+<launch>
+
+
+<node pkg="imu_filter_madgwick" type="imu_filter_node" name="imu_filter_madgwick_node" output="screen">  
+    <remap from="imu/data_raw" to="/stm_imu" />  
+    <param name="use_mag" value="false"/>
+    <param name="use_magnetic_field_msg" value="false"/>
+    <param name="zeta" value="0.00"/>
+    <param name="gain" value="0.02"/>  
+</node>
+
+
+</launch>

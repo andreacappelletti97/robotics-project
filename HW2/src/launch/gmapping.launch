@@ -1,0 +1,12 @@
+<launch>
+
+	<!-- ***** use sim time ***** --> 
+  	<param name="/use_sim_time" value="true" />
+
+	<!-- ***** TF laser baselink ***** -->
+	<node pkg="tf" type="static_transform_publisher" name="tf" args="0 0 0 0 0 0.7372773 0.6755902 scout/base_link laser 100"/> 
+
+	<!-- ***** Gmapping ***** -->
+    <include file="$(find boston)/launch/gmapping.launch.xml"/>
+
+</launch>
